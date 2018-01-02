@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://browseCaption"
+        class="com.rtcab.cedda.web.customer.CustomerBrowse"
+        focusComponent="customersTable"
+        lookupComponent="customersTable"
+        messagesPack="com.rtcab.cedda.web.customer">
+    <dsContext>
+        <groupDatasource id="customersDs"
+                         class="com.rtcab.cedda.entity.Customer"
+                         view="_local">
+            <query>
+                <![CDATA[select e from cedda$Customer e]]>
+            </query>
+        </groupDatasource>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="customersTable"
+            spacing="true">
+        <groupTable id="customersTable"
+                    width="100%">
+            <actions>
+                <action id="create"/>
+                <action id="edit"/>
+                <action id="remove"/>
+            </actions>
+            <columns>
+                <column id="id"/>
+                <column id="name"/>
+                <column id="firstName"/>
+                <column id="email"/>
+            </columns>
+            <rows datasource="customersDs"/>
+            <rowsCount/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+                <button id="createBtn"
+                        action="customersTable.create"/>
+                <button id="editBtn"
+                        action="customersTable.edit"/>
+                <button id="removeBtn"
+                        action="customersTable.remove"/>
+            </buttonsPanel>
+        </groupTable>
+    </layout>
+</window>

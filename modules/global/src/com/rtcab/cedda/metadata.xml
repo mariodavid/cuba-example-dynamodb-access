@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata xmlns="http://schemas.haulmont.com/cuba/metadata.xsd">
+    <metadata-model namespace="cedda"
+                    root-package="com.rtcab.cedda">
+        <class store="dynamodb">com.rtcab.cedda.entity.Customer</class>
+    </metadata-model>
+</metadata>
