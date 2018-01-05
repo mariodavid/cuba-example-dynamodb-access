@@ -2,6 +2,6 @@
 <metadata xmlns="http://schemas.haulmont.com/cuba/metadata.xsd">
     <metadata-model namespace="cedda"
                     root-package="com.rtcab.cedda">
-        <class store="dynamodb">com.rtcab.cedda.entity.Customer</class>
+        <class store="customerDynamoDb">com.rtcab.cedda.entity.Customer</class>
     </metadata-model>
 </metadata>

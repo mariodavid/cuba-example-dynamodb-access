@@ -15,8 +15,8 @@ import javax.inject.Inject;
 import java.util.*;
 import java.util.stream.Collectors;
 
-@Component("cedda_dynamodbDataStore")
-public class DynamodbDataStore implements DataStore {
+@Component("cedda_customerDynamoDbDataStore")
+public class CustomerDynamoDbDataStore implements DataStore {
 
     @Inject
     CustomerRepository customerRepository;
