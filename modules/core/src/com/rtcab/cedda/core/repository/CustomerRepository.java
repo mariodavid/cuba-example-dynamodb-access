@@ -10,5 +10,4 @@ import java.util.UUID;
 
 @EnableScan
 public interface CustomerRepository extends CrudRepository<Customer, UUID> {
-    List<Customer> findByFirstName(String firstName);
 }
